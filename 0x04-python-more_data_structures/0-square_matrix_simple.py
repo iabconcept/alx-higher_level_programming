@@ -1,5 +1,6 @@
-#!/usr/bin/python
-def square_matrix_simple(matrix=[]):
-    if not matrix:
-        print()
-    return [[item**2 for item in row] for row in matrix]
+#!/usr/bin/python3
+def square_matrix_simple(matrix=[]):
+    tmp = []
+    for x in matrix:
+        tmp.append(list(map(lambda x: x**2, x)))
+    return (tmp)
